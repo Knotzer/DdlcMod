@@ -1,0 +1,29 @@
+﻿I'm sorry, but an uncaught exception occurred.
+
+While running game code:
+  File "game/script.rpy", line 25, in script call
+    call story
+  File "game/Story.rpy", line 97, in script
+    $ pasue(0.3)
+  File "game/Story.rpy", line 97, in <module>
+    $ pasue(0.3)
+NameError: name 'pasue' is not defined
+
+-- Full Traceback ------------------------------------------------------------
+
+Full traceback:
+  File "game/script.rpy", line 25, in script call
+    call story
+  File "game/Story.rpy", line 97, in script
+    $ pasue(0.3)
+  File "D:\renpy-6.99.12.4-sdk\renpy\ast.py", line 814, in execute
+    renpy.python.py_exec_bytecode(self.code.bytecode, self.hide, store=self.store)
+  File "D:\renpy-6.99.12.4-sdk\renpy\python.py", line 1719, in py_exec_bytecode
+    exec bytecode in globals, locals
+  File "game/Story.rpy", line 97, in <module>
+    $ pasue(0.3)
+NameError: name 'pasue' is not defined
+
+Windows-8-6.2.9200
+Ren'Py 6.99.12.4.2187
+DDLC Mod Template 1.1.2
